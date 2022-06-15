@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Navbar from '../components/shared/Navbar'
 
 export default function Home() {
   return (
@@ -9,10 +10,7 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
-      <h1 className='text-5xl'>James Stroker</h1>
-      <p className='bg-red-300 text-5xl'>
-        Almost before we knew it, we had left the ground.
-      </p>
+      <Navbar />
     </div>
   )
 }
