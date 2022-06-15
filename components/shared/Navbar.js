@@ -1,6 +1,8 @@
 import React from 'react'
 import Image from 'next/image'
-import logoFacebook from '../../public/icons8-facebook-150.png'
+import logoFacebook from '../../public/iconmonstr-facebook-3-240.png'
+import logoPhone from '../../public/iconmonstr-phone-1-240.png'
+import logoEmail from '../../public/iconmonstr-email-1-240.png'
 
 const Navbar = () => {
   return (
@@ -22,15 +24,15 @@ const Navbar = () => {
             </a>
           </div>
 
-          <div className='flex items-center justify-self-end'>
-            {/* <Image
-          src={logoFacebook}
-          alt='Facebook'
-          width={35}
-          height={35}
-          className='text-teal bg-teal rounded-full'
-        /> */}
-            {/* <p>Phone</p> */}
+          <div className='flex items-center gap-8 justify-self-end'>
+            <Image
+              src={logoFacebook}
+              alt='Facebook Logo'
+              width={35}
+              height={35}
+            />
+            <Image src={logoEmail} alt='Email Logo' width={35} height={35} />
+            <Image src={logoPhone} alt='Phone Logo' width={35} height={35} />
             <p className='uppercase bg-teal rounded-3xl px-5 py-2'>Book Now</p>
           </div>
         </div>
