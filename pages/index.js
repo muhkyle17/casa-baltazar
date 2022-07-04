@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Navbar from '../components/shared/Navbar'
+import Carousel from '../components/shared/Carousel'
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       </Head>
 
       <Navbar />
+      <Carousel />
     </div>
   )
 }
